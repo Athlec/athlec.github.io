@@ -19,3 +19,22 @@ function resetImages() {
 function toggleMode() {
   isDisappearingMode = !isDisappearingMode;
 }
+
+function openFileInput() {
+  document.getElementById("file-input").click();
+}
+
+document.getElementById("file-input").addEventListener("change", function(event) {
+  var fileList = event.target.files;
+  var imageContainer = document.getElementById("image-containert1");
+
+  for (var i = 0; i < fileList.length; i++) {
+    var file = fileList[i];
+    var image = document.createElement("img");
+    image.src = URL.createObjectURL(file);
+    image.onclick = function() {
+      toggleImage(this);
+    };
+    imageContainer.appendChild(image);
+  }
+});
