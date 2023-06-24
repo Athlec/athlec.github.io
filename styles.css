@@ -1,0 +1,12 @@
+#image-containert {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+	background-color: black;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
