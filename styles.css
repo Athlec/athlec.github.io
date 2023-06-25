@@ -1,0 +1,7 @@
+ body {
+      background-color: black;
+ }
+ 
+.grayscale {
+  filter: grayscale(100%);
+}
