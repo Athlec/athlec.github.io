@@ -5,3 +5,8 @@
 .grayscale {
   filter: grayscale(100%);
 }
+
+.img-size {
+  width: 110px;
+  height: 80px;
+}
